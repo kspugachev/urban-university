@@ -9,4 +9,4 @@ def test_function():
 
 
 test_function()
-#inner_function()  # We can't call a function from the local space of another function.
+#inner_function()  # We can't call a function in the global space from the local space of another function.
