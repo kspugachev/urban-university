@@ -34,10 +34,7 @@ def challenge_result(score_1, score_2, team1_time, team2_time):
     else:
         result = 'Ничья!'
 
-print(f'Результат битвы: {challenge_result(40, 
-										   42, 
-										   1552.512, 
-										   2153.31451)} команды Мастера кода!')
+print(f'Результат битвы: {challenge_result(40, 42, 1552.512, 2153.31451)} команды Мастера кода!')
 
 tasks_total = 82
 time_avg = 45.2
