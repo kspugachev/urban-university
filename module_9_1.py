@@ -6,8 +6,7 @@
 def apply_all_func(int_list, *functions):
 	result = {}
 	for function in functions:
-		func_result = function(int_list)
-		result[function.__name__] = func_result
+		result[function.__name__] = function(int_list)
 	return result
 
 print(apply_all_func([6, 20, 15, 9], max, min))
