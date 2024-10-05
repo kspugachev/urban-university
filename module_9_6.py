@@ -5,7 +5,7 @@
 
 def all_variants(text):
 	length = len(text)  # Длина начальной строки.
-	for size in range(1, length + 1):  # Варианты длин строк.
+	for size in range(1, length + 1):  # Варианты размеров строк.
 		for start_index in range(length - size + 1):  # Варианты первого значения строк.
 			yield text[start_index:start_index + size]  # Выводим последовательность строк.
 
