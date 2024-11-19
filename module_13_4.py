@@ -48,4 +48,5 @@ async def send_calories(message: types.Message, state: FSMContext):  # Указ�
 	await state.finish()
 
 if __name__ == '__main__':
+	# При запуске бот игнорирует старые сообщения в чате и реагирует только на новые:
 	executor.start_polling(dp, skip_updates=True)
