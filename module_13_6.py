@@ -47,6 +47,7 @@ async def main_menu(message: types.Message):
 @dp.callback_query_handler(text='formulas')
 async def get_formulas(call):
 	await call.message.answer('10 х вес (кг) + 6,25 x рост (см) – 5 х возраст (г) + 5')
+	await call.answer()  # Уберем эффект 'западающей' кнопки.
 
 # Функция запускается при нажатии на 'Рассчитать норму калорий' вложенной клавиатуры:
 @dp.callback_query_handler(text='calories')
@@ -54,6 +55,7 @@ async def get_formulas(call):
 async def set_age(call):
 	await call.message.answer('Введите свой возраст:')
 	await UserState.age.set()  # Устанавливаем первое состояние ('age').
+	await call.answer()  # Уберем эффект 'западающей' кнопки.
 
 @dp.message_handler(state=UserState.age)  # Функция запускается, если установлено первое состояние ('age').
 # Обработка ввода возраста и запрос значения роста:
