@@ -1,4 +1,4 @@
-API = '7248575872:AAE_EKwWY9g1R8qVIPzbtnWlVsODNNS0j2c'
+API = '*********************************************'
 
 product_names = (
 	'Витамины',
